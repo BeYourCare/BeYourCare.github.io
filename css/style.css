@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+html, 
+body {
+    height: 100%;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+    /* background-color: rgb(146, 255, 173); */
+}
+
+.container{
+    background-image: url("/img/evie-s-vz3IQy0LOaA-unsplash.jpg");
+    background-size: cover;
+    background-position: -20px -300px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.tombol{
+    background-color: rgba(238, 238, 238, 0.7);
+    border: rgb(119, 119, 119) solid 2px;
+    border-radius: 75px;
+    width: 60%;
+    box-sizing: border-box;
+    display: flex;
+}
+.tombol:hover{
+    cursor: pointer;
+}
+.icon{
+    width: 20%;
+    line-height: 50px;
+}
+
+.icon-ecom{
+    width: 30px;
+}
+
+.desc-icon{
+    width: 80%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
