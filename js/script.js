@@ -5,5 +5,5 @@ function gotoWhatsapp(){
 }
 
 function gotoShopee(){
-    window.open("https:/https://shopee.co.id/nviananggitia","_blank")
+    window.open("https://shopee.co.id/nviananggitia","_blank")
 }
