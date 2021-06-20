@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D'Beauty</title>
+    <title>BeYourCare</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./bootstrap/js/bootstrap.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.js" defer></script>
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -25,8 +28,9 @@
                         <footer class="blockquote-footer">@<cite title="Source Title">BeYourCare</cite></footer>
                     </blockquote>
                 </div>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-6 tombol mb-3">
+                <div class="row align-items-center justify-content-center" data-toggle="tooltip" data-placement="top"
+                    title="Hubungi Whatsapp Kami">
+                    <div class="col-6 tombol mb-3" onclick="gotoWhatsapp()">
                         <div class="icon">
                             <img src="./img/whatsapp-logo-png-2263.png " class="icon-ecom" alt="tokopedia" srcset="">
                         </div>
@@ -35,7 +39,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center justify-content-center">
+                <!-- <div class="row align-items-center justify-content-center" data-toggle="tooltip" data-placement="top"
+                title="M">
                     <div class="col-6 tombol mb-3">
                         <div class="icon">
                             <img src="./img/tokopedia-38845.png " class="icon-ecom" alt="tokopedia" srcset="">
@@ -44,8 +49,9 @@
                             <p><strong>Tokopedia</strong></p>
                         </div>
                     </div>
-                </div>
-                <div class="row align-items-center justify-content-center">
+                </div> -->
+                <div class="row align-items-center justify-content-center" data-toggle="tooltip" data-placement="top"
+                title="Kunjungi Shopee Kami">
                     <div class="col-6 tombol mb-3">
                         <div class="icon">
                             <img src="./img/shopee-logo-31405.png " class="icon-ecom" alt="tokopedia" srcset="">
@@ -55,12 +61,15 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-        
-    </div>
 
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
